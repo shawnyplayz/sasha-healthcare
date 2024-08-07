@@ -71,7 +71,7 @@ const Login = () => {
               <AuthButton>Sign in</AuthButton>
             </div>
             <div className="flex flex-row justify-center items-center gap-2 text-xs">
-              <span>Don't have an account?</span>
+              <span>Don&apos;t have an account?</span>
               <Link href="/register" className="text-blue-600 hover:underline">
                 Sign Up Now
               </Link>
