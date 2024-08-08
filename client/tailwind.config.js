@@ -11,12 +11,16 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'home-carousel': "url('/Images/HomeCarouselBackground.png')",  
+        'home-carousel-color-1': 'radial-gradient(circle at 50% 50%, #FFFFFF 0%, #F2ECFF 100%)',
+        'home-carousel-color-2': 'linear-gradient(180deg, rgba(226, 247, 255, 0.1) 0%, rgba(0, 162, 229, 0.1) 100%)',
       },
     },
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
       volkhov: ["Volkhov", "serif"],
       SFPRO: ["SFPRODISPLAY", "sans-serif"],
+      kyivType: ["KyivType", "sans"],
     },
   },
   plugins: [],

@@ -12,6 +12,11 @@
   src: url("../../public/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF");
 }
 
+@font-face {
+  font-family: "KyivType";
+  src: url("../../public/fonts/KyivType/KyivTypeSansRegular.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
