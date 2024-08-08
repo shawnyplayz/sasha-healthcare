@@ -21,6 +21,8 @@ module.exports = {
       volkhov: ["Volkhov", "serif"],
       SFPRO: ["SFPRODISPLAY", "sans-serif"],
       kyivType: ["KyivType", "sans"],
+      vollkorn: ["Vollkorn", "serif"],
+      inter: ["Inter", "sans-serif"],
     },
   },
   plugins: [],

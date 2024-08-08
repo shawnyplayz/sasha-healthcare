@@ -23,7 +23,7 @@ const HomeCarousel = () => {
         transitionTime={500}
       >
         {/* First Section */}
-        <div className="bg-home-carousel flex flex-col md:flex-row gap-12 items-center justify-around p-4 overflow-hidden min-h-[600px]">
+        <div className="bg-home-carousel flex flex-col md:flex-row gap-12 items-center justify-around p-4 overflow-hidden min-h-[800px]">
           <div className="text-section max-w-2xl text-center md:text-left">
             <h1 className="font-kyivType font-normal text-4xl md:text-6xl py-4">
               Delight your skin and stimulate your senses
@@ -42,15 +42,16 @@ const HomeCarousel = () => {
               height={500}
               alt="Clonex-A product image"
               className="object-cover"
-              style={{ objectFit: "cover", height: "500px", width: "500px" }}
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>
         {/* Second Section */}
-        <div className="bg-home-carousel-color-1 flex flex-col md:flex-row gap-12 items-center justify-around p-4 overflow-hidden min-h-[600px]">
+        <div className="bg-home-carousel-color-1 flex flex-col md:flex-row gap-12 items-center justify-around p-4 overflow-hidden min-h-[800px]">
           <div className="text-section max-w-2xl text-center md:text-left">
             <h1 className="font-kyivType font-normal text-4xl md:text-6xl py-4">
-              Promoting integral wellness for dermal, follicular, and overall vitality
+              Promoting integral wellness for dermal, follicular, and overall
+              vitality
             </h1>
             <div className="mt-12">
               <HomeButton>Shop Now</HomeButton>
@@ -63,15 +64,16 @@ const HomeCarousel = () => {
               height={500}
               alt="Zorman product image"
               className="object-cover"
-              style={{ objectFit: "cover", height: "500px", width: "500px" }}
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>
         {/* Third Section */}
-        <div className="bg-home-carousel-color-2 flex flex-col md:flex-row gap-12 items-center justify-around p-4 overflow-hidden min-h-[600px]">
+        <div className="bg-home-carousel-color-2 flex flex-col md:flex-row gap-12 items-center justify-around p-4 overflow-hidden min-h-[800px]">
           <div className="text-section max-w-2xl text-center md:text-left">
             <h1 className="font-kyivType font-normal text-4xl md:text-6xl py-4">
-              Promoting integral wellness for dermal, follicular, and overall vitality
+              Promoting integral wellness for dermal, follicular, and overall
+              vitality
             </h1>
             <div className="mt-12">
               <HomeButton>Shop Now</HomeButton>
@@ -84,7 +86,7 @@ const HomeCarousel = () => {
               height={500}
               alt="Zorman product image"
               className="object-cover"
-              style={{ objectFit: "cover", height: "500px", width: "500px" }}
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>

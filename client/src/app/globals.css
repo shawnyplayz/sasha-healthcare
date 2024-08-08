@@ -17,6 +17,16 @@
   src: url("../../public/fonts/KyivType/KyivTypeSansRegular.otf");
 }
 
+@font-face {
+  font-family: "Vollkorn";
+  src: url("../../public/fonts/Vollkorn/Vollkorn-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../public/fonts/Inter/Inter_Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
