@@ -3,9 +3,11 @@ import React from "react";
 import coconut from "./assets/discovery/coconut.jpeg";
 import ricewater from "./assets/discovery/ricewater.jpeg";
 import bringraj from "./assets/discovery/bringraj.png";
+import Container from "@/components/Container";
 
 const DiscoverSection = () => {
   return (
+    <Container>
     <div className="flex items-center justify-center flex-col overflow-hidden px-14 mb-20">
       <div className="font-semibold text-base pb-3 font-inter">
         #MADE FOR EVERYBODY
@@ -69,6 +71,7 @@ const DiscoverSection = () => {
         </div>
       </div>
     </div>
+    </Container>
   );
 };
 
