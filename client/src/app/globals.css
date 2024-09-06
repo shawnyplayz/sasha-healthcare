@@ -27,6 +27,25 @@
   src: url("../../public/fonts/Inter/Inter_Regular.ttf");
 }
 
+@font-face {
+  font-family: "Value-Serif-Pro-Regular";
+  src: url("../../public/fonts/Value-Serif-Pro/Value-Serif-Pro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Value-Serif-Pro-Medium";
+  src: url("../../public/fonts/Value-Serif-Pro/Value-Serif-Pro-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Value-Serif-Pro-Bold";
+  src: url("../../public/fonts/Value-Serif-Pro/Value-Serif-Pro-Bold.ttf");
+}
+@font-face {
+  font-family: "GT-Walsheim-Regular-Oblique-Trial";
+  src: url("../../public/fonts/GT-Walsheim/GT-Walsheim-Regular-Oblique-Trial.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +53,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;

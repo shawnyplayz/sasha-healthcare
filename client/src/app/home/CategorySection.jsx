@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import Skincare from "./assets/category/skincare.gif";
-import Haircare from "./assets/category/Haircare.svg";
-import Nutra from "./assets/category/Nutra.svg";
-import Container from "@/components/Container";
+import Skincare from "../../../public/Images/CategorySectionAssets/skincare.gif";
+import Haircare from "../../../public/Images/CategorySectionAssets/Haircare.svg";
+import Nutra from "../../../public/Images/CategorySectionAssets/Nutra.svg";
+
+import Container from "@/components/utils/Container";
 
 const CategorySection = () => {
   return (

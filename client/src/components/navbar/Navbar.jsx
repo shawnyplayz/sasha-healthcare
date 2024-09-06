@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { CiSearch } from "react-icons/ci";
 import { MdOutlineShoppingBag } from "react-icons/md";
@@ -46,9 +47,11 @@ const Navbar = () => {
           <MdOutlineShoppingBag size={24} />
         </li>
         <li>
-          <button className="py-3 px-7 bg-[#1A1A1A] text-white rounded-lg font-normal text-base gap-2 hover:text-black hover:bg-white hover:border-black hover:border-2 border-2 border-black">
-            Signup
-          </button>
+          <Link href="/register">
+            <button className="py-3 px-7 bg-[#1A1A1A] text-white rounded-lg font-normal text-base gap-2 hover:text-black hover:bg-white hover:border-black hover:border-2 border-2 border-black">
+              Signup
+            </button>
+          </Link>
         </li>
       </ul>
     </nav>

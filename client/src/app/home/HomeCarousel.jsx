@@ -1,10 +1,8 @@
 "use client";
 
 import React from "react";
-import ClonexA from "./assets/Clonex-A.png";
-import Zorman from "./assets/Zorman.png";
 import Image from "next/image";
-import HomeButton from "./HomeButton";
+import HomeButton from "@/components/buttons/HomeButton";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -37,7 +35,7 @@ const HomeCarousel = () => {
           </div>
           <div className="image-section my-9">
             <Image
-              src={ClonexA}
+              src={"/Images/HeroSectionAssets/Clonex-A.png"}
               width={500}
               height={500}
               alt="Clonex-A product image"
@@ -59,7 +57,7 @@ const HomeCarousel = () => {
           </div>
           <div className="image-section my-9">
             <Image
-              src={Zorman}
+              src={"/Images/HeroSectionAssets/Zorman.png"}
               width={500}
               height={500}
               alt="Zorman product image"
@@ -81,7 +79,7 @@ const HomeCarousel = () => {
           </div>
           <div className="image-section my-9">
             <Image
-              src={Zorman}
+              src={"/Images/HeroSectionAssets/Zorman.png"}
               width={500}
               height={500}
               alt="Zorman product image"

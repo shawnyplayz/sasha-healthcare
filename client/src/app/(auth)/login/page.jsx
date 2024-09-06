@@ -14,7 +14,7 @@ const Login = () => {
   return (
     <div className="flex h-screen overflow-hidden">
       {/* Left Side */}
-      <div className="left-side flex-1 relative">
+      <div className="hidden lg:block left-side flex-1 relative">
         <Image
           src="/Images/LoginImage.svg"
           alt="Login"
@@ -59,11 +59,12 @@ const Login = () => {
             <div className="py-4 flex justify-between items-center">
               <div className="font-SFPRO font-normal text-sm flex flex-row items-center">
                 <Switch defaultChecked={false} onChange={handleSwitchChange} />
-                <p className="px-2 text-xs font-normal">
-                  Remember Me
-                </p>
+                <p className="px-2 text-xs font-normal">Remember Me</p>
               </div>
-              <Link href="/forgot-password" className="text-blue-500 hover:underline text-xs">
+              <Link
+                href="/forgot-password"
+                className="text-blue-500 hover:underline text-xs"
+              >
                 Forgot Password?
               </Link>
             </div>
