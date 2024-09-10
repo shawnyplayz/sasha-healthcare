@@ -5,12 +5,14 @@ import React from "react";
 
 const ContactUsSection = () => {
   return (
-    <div className="container mx-auto">
-      <div className="flex lg:flex-row flex-col">
-        <ContactUsInfo />
-        <ContactUsSubmission />
+    <Container>
+      <div>
+        <div className="flex lg:flex-row flex-col">
+          <ContactUsInfo />
+          <ContactUsSubmission />
+        </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

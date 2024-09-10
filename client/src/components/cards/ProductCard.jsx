@@ -22,7 +22,9 @@ const ProductCard = ({
         />
       </div>
       <div className="flex flex-row mt-3 justify-between">
-        <h1 className="font-medium text-xl text-[#484848]">{productName}</h1>
+        <h1 className="font-medium text-start lg:text-xl text-[#484848]">
+          {productName}
+        </h1>
         <div className="flex items-center">
           {Array.from({ length: ratingStars }, (_, index) => (
             <Image

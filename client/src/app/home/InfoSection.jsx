@@ -41,10 +41,12 @@ const InfoSection = () => {
   return (
     <div className="overflow-hidden flex items-center justify-center flex-col">
       <Container>
-        <div className="font-vollkorn font-normal text-5xl">{info.heading}</div>
+        <div className="font-vollkorn font-normal text-center lg:text-start lg:text-5xl text-3xl">
+          {info.heading}
+        </div>
       </Container>
       <Marquee autoFill>
-        <div className="flex flex-row pt-20 gap-6 mx-4">
+        <div className="flex flex-row lg:pt-20 gap-6 mx-4">
           {infoCardData.map((card) => (
             <InfoCard
               key={card.id}

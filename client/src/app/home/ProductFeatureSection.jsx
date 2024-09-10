@@ -24,21 +24,21 @@ const ProductFeatureSection = () => {
 
   return (
     <Container>
-      <div className="flex items-center justify-center flex-col text-center">
-        <div className="flex items-center justify-center flex-col max-w-3xl pb-12">
-          <div className="font-volkhov font-normal text-5xl mt-28">
+      <div className="flex flex-col items-center text-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl pb-12">
+          <h2 className="font-volkhov font-normal text-3xl sm:text-4xl md:text-5xl mt-12">
             Our Products
-          </div>
-          <div className="font-normal text-base pt-5 text-[#8A8A8A]">
+          </h2>
+          <p className="font-normal text-sm sm:text-base text-[#8A8A8A] mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
             duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
             sollicitudin
-          </div>
+          </p>
         </div>
-        <div className="flex items-center justify-center mt-12">
+        <div className="w-full flex justify-center mt-6">
           <TabNavigation tabs={tabs} />
         </div>
-        <div className="grid lg:grid-cols-3 gap-14 transition-all duration-500 ease-in-out transform">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-6 transition-all duration-500 ease-in-out transform">
           {productsToDisplay.map((product) => (
             <ProductCard
               key={product?.productId}
@@ -52,13 +52,13 @@ const ProductFeatureSection = () => {
             />
           ))}
         </div>
-        <div className="mt-12">
-          {products.length > 6 && (
+        {products.length > 6 && (
+          <div className="mt-8">
             <Button onClick={handleToggleView}>
               {showMore ? "View Less" : "View More"}
             </Button>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </Container>
   );

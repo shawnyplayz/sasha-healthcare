@@ -6,9 +6,9 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between py-6 px-14">
+    <nav className="flex items-center lg:justify-between py-6 lg:px-14 px-3">
       {/* Left Menu */}
-      <ul className="flex flex-row gap-7 font-medium text-base items-center flex-1">
+      <ul className="hidden lg:flex flex-row gap-7 font-medium text-base items-center flex-1">
         <li>
           <a href="#skincare">Skincare</a>
         </li>
@@ -24,7 +24,7 @@ const Navbar = () => {
       </ul>
 
       {/* Logo */}
-      <div className="flex justify-center flex-shrink-0 items-center">
+      <div className="flex lg:justify-center justify-start flex-shrink-0 items-center">
         <Image
           src="/Images/SashaLogo.svg"
           width={140}
@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       {/* Right Menu */}
-      <ul className="flex flex-row gap-4 items-center font-medium text-base flex-1 justify-end">
+      <ul className="hidden lg:flex flex-row gap-4 items-center font-medium text-base flex-1 justify-end">
         <li>
           <CiSearch size={24} />
         </li>

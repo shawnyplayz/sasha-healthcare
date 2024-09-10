@@ -1,73 +1,33 @@
-import Image from "next/image";
 import React from "react";
 import Container from "@/components/utils/Container";
+import DiscoverCard from "@/components/cards/DiscoverCard";
 
 const DiscoverSection = () => {
   return (
     <Container>
-      <div className="flex items-center justify-center flex-col overflow-hidden px-14 mb-20">
-        <div className="font-semibold text-base pb-3 font-inter">
+      <div className="flex items-center justify-center flex-col overflow-hidden px-6 md:px-14 mb-20">
+        <div className="font-semibold text-sm md:text-base pb-3 font-inter">
           #MADE FOR EVERYBODY
         </div>
-        <div className="font-normal text-5xl pb-12 font-vollkorn">
+        <div className="font-normal text-3xl md:text-5xl pb-8 md:pb-12 font-vollkorn text-center">
           Discover your perfect match
         </div>
-        <div className="flex flex-row justify-center items-center">
-          <div className="flex flex-row gap-6">
-            {/* Coconut */}
-            <div className="rounded-2xl relative w-96 h-40">
-              <div className="absolute inset-0 bg-black opacity-100 rounded-2xl"></div>
-              <Image
-                src={"/Images/DiscoverySectionAssets/coconut.webp"}
-                className="object-cover rounded-2xl opacity-90"
-                layout="fill"
-              />
-              <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-                <span className="text-white text-2xl font-semibold">
-                  Coconut
-                </span>
-                <div className="bg-white text-black text-xl font-medium rounded-md px-4 py-1 mt-2 font-vollkorn">
-                  For Smooth Skin
-                </div>
-              </div>
-            </div>
-
-            {/* Bringraj */}
-            <div className="rounded-2xl relative w-96 h-40">
-              <div className="absolute inset-0 bg-black opacity-100 rounded-2xl"></div>
-              <Image
-                src={"/Images/DiscoverySectionAssets/bringraj.webp"}
-                className="object-cover rounded-2xl opacity-90"
-                layout="fill"
-              />
-              <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-                <span className="text-white text-2xl font-semibold">
-                  Bringraj
-                </span>
-                <div className="bg-white text-black text-xl font-medium rounded-md px-4 py-1 mt-2 font-vollkorn">
-                  For Shine Skin
-                </div>
-              </div>
-            </div>
-
-            {/* Rice Water */}
-            <div className="rounded-2xl relative w-96 h-40">
-              <div className="absolute inset-0 bg-black opacity-100 rounded-2xl"></div>
-              <Image
-                src={"/Images/DiscoverySectionAssets/ricewater.webp"}
-                className="object-cover rounded-2xl opacity-90"
-                layout="fill"
-              />
-              <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-                <span className="text-white text-2xl font-semibold">
-                  Rice Water
-                </span>
-                <div className="bg-white text-black text-xl font-medium rounded-md px-4 py-1 mt-2 font-vollkorn">
-                  For Strong Hair
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-6 w-full">
+          <DiscoverCard
+            imageSrc="/Images/DiscoverySectionAssets/coconut.webp"
+            title="Coconut"
+            description="For Smooth Skin"
+          />
+          <DiscoverCard
+            imageSrc="/Images/DiscoverySectionAssets/bringraj.webp"
+            title="Bringraj"
+            description="For Shine Skin"
+          />
+          <DiscoverCard
+            imageSrc="/Images/DiscoverySectionAssets/ricewater.webp"
+            title="Rice Water"
+            description="For Strong Hair"
+          />
         </div>
       </div>
     </Container>
