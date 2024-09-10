@@ -8,6 +8,7 @@ import InfoSection from "./InfoSection";
 import ProductFeatureSection from "./ProductFeatureSection";
 import TestimonialsSection from "./TestimonialsSection";
 import ContactUsSection from "./ContactUsSection";
+import PromoCard from "@/components/cards/PromoCard";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <ProductFeatureSection />
       {/* <TestimonialsSection /> */}
       <ContactUsSection />
+      <PromoCard/>
     </div>
   );
 };
