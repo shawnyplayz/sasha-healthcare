@@ -2,11 +2,13 @@
 
 import { useState } from "react";
 
-const TabNavigation = ({ tabs }) => {
+const TabNavigation = ({ tabs, onTabClick }) => {
   const [activeTab, setActiveTab] = useState(0);
 
-  const handleTabClick = (index) => {
+  const handleTabClick = (event, index) => {
+    event.preventDefault(); // Prevent the default anchor behavior
     setActiveTab(index);
+    onTabClick(index); // Notify parent of the tab change
   };
 
   return (
@@ -20,7 +22,7 @@ const TabNavigation = ({ tabs }) => {
           ) : (
             <a
               href="#"
-              onClick={() => handleTabClick(index)}
+              onClick={(event) => handleTabClick(event, index)} // Pass event to the handler
               className={`inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold ${
                 activeTab === index
                   ? "text-white bg-black"

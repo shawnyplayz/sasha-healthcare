@@ -8,6 +8,7 @@ export const products = [
     reviewCount: "(4.1k)",
     ratingStars: "5",
     isAlmostSoldOut: true,
+    category: "Skincare",
   },
   {
     productId: 2,
@@ -18,6 +19,7 @@ export const products = [
     reviewCount: "(4.1k)",
     ratingStars: "5",
     isAlmostSoldOut: true,
+    category: "Haircare",
   },
   {
     productId: 3,
@@ -28,6 +30,7 @@ export const products = [
     reviewCount: "(4.1k)",
     ratingStars: "5",
     isAlmostSoldOut: true,
+    category: "Nutraceuticals",
   },
   {
     productId: 4,
@@ -38,6 +41,7 @@ export const products = [
     reviewCount: "(4.1k)",
     ratingStars: "5",
     isAlmostSoldOut: true,
+    category: "Nutraceuticals",
   },
   {
     productId: 5,
@@ -48,6 +52,7 @@ export const products = [
     reviewCount: "(4.1k)",
     ratingStars: "5",
     isAlmostSoldOut: true,
+    category: "Haircare",
   },
   {
     productId: 6,
@@ -58,6 +63,7 @@ export const products = [
     reviewCount: "(4.1k)",
     ratingStars: "5",
     isAlmostSoldOut: true,
+    category: "Haircare",
   },
   {
     productId: 7,
@@ -68,6 +74,7 @@ export const products = [
     reviewCount: "(4.1k)",
     ratingStars: "5",
     isAlmostSoldOut: true,
+    category: "Skincare",
   },
   {
     productId: 8,
@@ -78,6 +85,7 @@ export const products = [
     reviewCount: "(4.1k)",
     ratingStars: "5",
     isAlmostSoldOut: true,
+    category: "Skincare",
   },
   {
     productId: 9,
@@ -88,5 +96,6 @@ export const products = [
     reviewCount: "(4.1k)",
     ratingStars: "3",
     isAlmostSoldOut: true,
+    category: "Skincare",
   },
 ];

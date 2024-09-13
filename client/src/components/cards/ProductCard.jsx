@@ -9,6 +9,7 @@ const ProductCard = ({
   reviewCount,
   ratingStars,
   isAlmostSoldOut,
+  category,
 }) => {
   return (
     <div className="max-w-md mt-5 px-6 pt-4 pb-9 rounded-xl shadow-md transition-transform transform hover:scale-105 cursor-pointer">
