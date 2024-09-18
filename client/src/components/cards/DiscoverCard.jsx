@@ -7,6 +7,7 @@ const DiscoverCard = ({ imageSrc, title, description }) => {
       <div className="absolute inset-0 bg-black opacity-100 rounded-2xl"></div>
       <Image
         src={imageSrc}
+        alt="Discover Image"
         className="object-cover rounded-2xl opacity-90"
         layout="fill"
       />
