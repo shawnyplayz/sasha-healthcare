@@ -1,9 +1,9 @@
 "use client";
 import React, { useCallback } from "react";
 import Image from "next/image";
-import Input from "@/components/Input";
+import Input from "@/components/utils/Input";
 import { Switch } from "antd";
-import AuthButton from "@/components/AuthButton";
+import AuthButton from "@/components/buttons/AuthButton";
 import Link from "next/link";
 
 const Register = () => {

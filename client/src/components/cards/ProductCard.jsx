@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Rating from '@mui/material/Rating';
 
 const ProductCard = ({
   productName,
@@ -7,12 +8,13 @@ const ProductCard = ({
   productImageSrc,
   brandName,
   reviewCount,
-  ratingStars,
+  productRating,
   isAlmostSoldOut,
   category,
+  onClick,
 }) => {
   return (
-    <div className="max-w-md mt-5 px-6 pt-4 pb-9 rounded-xl shadow-md transition-transform transform hover:scale-105 cursor-pointer">
+    <div className="max-w-md mt-5 px-6 pt-4 pb-9 rounded-xl shadow-md transition-transform transform hover:scale-105 cursor-pointer mb-4">
       <div className="rounded-lg">
         <Image
           width={348}
@@ -22,29 +24,25 @@ const ProductCard = ({
           src={productImageSrc}
         />
       </div>
-      <div className="flex flex-row mt-3 justify-between">
-        <h1 className="font-medium text-start lg:text-xl text-[#484848]">
-          {productName}
-        </h1>
-        <div className="flex items-center">
-          {Array.from({ length: ratingStars }, (_, index) => (
-            <Image
-              key={index}
-              src={"/Images/ProductCardAssets/StarVector.svg"}
-              width={20}
-              height={20}
-              alt="star"
+      <div className="flex flex-col mt-3">
+        <div className="flex justify-between items-center">
+          <h1 className="font-medium text-start lg:text-xl text-[#484848]">
+            {productName}
+          </h1>
+          <div className="flex items-center">
+            <Rating
+              name="half-rating-read"
+              defaultValue={productRating}
+              precision={0.5}
+              readOnly
+              size="small"
             />
-          ))}
+          </div>
         </div>
-      </div>
-      <div className="mt-1">
-        <p className="flex justify-start font-medium text-xs text-[#8A8A8A]">
+        <p className="flex justify-start font-medium text-xs text-[#8A8A8A] mt-1">
           {brandName}
         </p>
-      </div>
-      <div className="mt-6">
-        <p className="flex justify-start text-xs font-medium text-[#484848]">
+        <p className="flex justify-start text-xs font-medium text-[#484848] mt-6">
           {reviewCount} Customer Reviews
         </p>
       </div>

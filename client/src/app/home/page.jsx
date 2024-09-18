@@ -1,7 +1,7 @@
 import React from "react";
 import HomeCarousel from "./HomeCarousel";
 import CategorySection from "./CategorySection";
-import TopBanner from "@/components/TopBanner";
+import TopBanner from "@/components/utils/TopBanner";
 import Navbar from "@/components/navbar/Navbar";
 import DiscoverSection from "./DiscoverSection";
 import InfoSection from "./InfoSection";
@@ -22,7 +22,7 @@ const Home = () => {
       <ProductFeatureSection />
       <TestimonialsSection />
       <ContactUsSection />
-      <PromoCard/>
+      <PromoCard />
     </div>
   );
 };

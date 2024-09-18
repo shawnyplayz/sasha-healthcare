@@ -6,6 +6,7 @@ import Container from "@/components/utils/Container";
 import TabNavigation from "@/components/utils/TabNavigation";
 import Button from "@/components/buttons/Button";
 import { products } from "@/app/constants.js";
+import Link from "next/link";
 
 const ProductFeatureSection = () => {
   const [showMore, setShowMore] = useState(false);
@@ -25,11 +26,16 @@ const ProductFeatureSection = () => {
     setActiveTab(index);
   };
 
-  const filteredProducts = activeTab === 0
-    ? products // Show all products for "All Products"
-    : products.filter((product) => product.category === tabs[activeTab].label);
+  const filteredProducts =
+    activeTab === 0
+      ? products // Show all products for "All Products"
+      : products.filter(
+          (product) => product.category === tabs[activeTab].label
+        );
 
-  const productsToDisplay = showMore ? filteredProducts : filteredProducts.slice(0, 6);
+  const productsToDisplay = showMore
+    ? filteredProducts
+    : filteredProducts.slice(0, 6);
 
   return (
     <Container>
@@ -45,21 +51,27 @@ const ProductFeatureSection = () => {
           </p>
         </div>
         <div className="w-full flex justify-center mt-6">
-          <TabNavigation tabs={tabs} onTabClick={handleTabChange} /> {/* Pass onTabClick */}
+          <TabNavigation tabs={tabs} onTabClick={handleTabChange} />{" "}
+          {/* Pass onTabClick */}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-6 transition-all duration-500 ease-in-out transform">
           {productsToDisplay.map((product) => (
-            <ProductCard
-              key={product?.productId}
-              productName={product?.productName}
-              productPrice={product?.productPrice}
-              productImageSrc={product?.productImageSrc}
-              brandName={product?.brandName}
-              reviewCount={product?.reviewCount}
-              ratingStars={product?.ratingStars}
-              isAlmostSoldOut={product?.isAlmostSoldOut}
-              category={product?.category}
-            />
+            <Link
+              key={product.productId}
+              href={`/product/${product.productId}`}
+            >
+              <ProductCard
+                key={product?.productId}
+                productName={product?.productName}
+                productPrice={product?.productPrice}
+                productImageSrc={product?.productImageSrc}
+                brandName={product?.brandName}
+                reviewCount={product?.reviewCount}
+                productRating={product?.productRating}
+                isAlmostSoldOut={product?.isAlmostSoldOut}
+                category={product?.category}
+              />
+            </Link>
           ))}
         </div>
         {filteredProducts.length > 6 && (
