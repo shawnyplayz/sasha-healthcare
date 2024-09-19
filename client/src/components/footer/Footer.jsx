@@ -23,12 +23,12 @@ const FOOTER_ITEMS = [
     text: "30 DAYS MONEY BACK",
   },
   {
-    src: "/Images/FooterAssets/shield.svg",
+    src: "/Images/FooterAssets/Shield.svg",
     alt: "Shield Icon",
     text: "100% SECURE PAYMENT",
   },
   {
-    src: "/Images/FooterAssets/chat.svg",
+    src: "/Images/FooterAssets/Chat.svg",
     alt: "Chat Icon",
     text: "24/7 DEDICATED SUPPORT",
   },
