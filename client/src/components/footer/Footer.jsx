@@ -2,7 +2,15 @@ import Image from "next/image";
 import React from "react";
 import Container from "../utils/Container";
 
-// Define constants for the footer items
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaInstagram,
+  FaTwitter,
+  FaBehance,
+} from "react-icons/fa";
+import Link from "next/link";
+
 const FOOTER_ITEMS = [
   {
     src: "/Images/FooterAssets/Truck.svg",
@@ -30,6 +38,7 @@ const Footer = () => {
   return (
     <Container>
       <div className="my-8 mx-4">
+        {/* Top Footer */}
         <div className="top-footer lg:my-12">
           <div className="info-box grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {FOOTER_ITEMS.map((item, index) => (
@@ -48,8 +57,102 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="main-footer mt-8">{/* Add your content here */}</div>
-        <div className="bottom-footer mt-8">{/* Add your content here */}</div>
+        {/* Main Footer */}
+        <div className="main-footer mt-8 flex flex-col lg:flex-row lg:gap-16">
+          {/* First Section */}
+          <div className="first-section mt-8 lg:mt-16">
+            <h1 className="font-bold text-3xl lg:text-5xl">Sasha</h1>
+            <h5 className="mt-3 font-inter font-normal text-xs">HOTLINE 24/7</h5>
+            <h4 className="text-[#4B3EC4] font-inter font-bold text-lg lg:text-xl mt-1">
+              +91 8655100951
+            </h4>
+            <div className="mt-5 max-w-full lg:max-w-72">
+              <p className="font-inter font-normal text-sm">
+                257 Thatcher Road St, Brooklyn, Manhattan, NY 10092
+              </p>
+            </div>
+            <p className="font-inter font-normal text-sm mt-1">
+              contact@swateletro.com
+            </p>
+            <div className="icon-group mt-10 flex gap-3">
+              <div className="rounded-full border p-3">
+                <FaFacebookF />
+              </div>
+              <div className="rounded-full border p-3">
+                <FaYoutube />
+              </div>
+              <div className="rounded-full border p-3">
+                <FaInstagram />
+              </div>
+              <div className="rounded-full border p-3">
+                <FaTwitter />
+              </div>
+              <div className="rounded-full border p-3">
+                <FaBehance />
+              </div>
+            </div>
+          </div>
+
+          {/* Responsive Sections */}
+          {[
+            {
+              title: "Top Categories",
+              links: [
+                "Skin Care",
+                "Hair Serum",
+                "Face Care",
+                "Body Lotions",
+                "Perfumes",
+                "Cosmetics",
+              ],
+            },
+            {
+              title: "Company",
+              links: [
+                "About Sasha",
+                "Contact",
+                "Career",
+                "Blog",
+                "Sitemap",
+                "Store Location",
+              ],
+            },
+            {
+              title: "Help Center",
+              links: [
+                "Customer Service",
+                "Policy",
+                "Terms & Conditions",
+                "Tranch Order",
+                "FAQs",
+                "My Account",
+                "Product Support",
+              ],
+            },
+            {
+              title: "Partner",
+              links: ["Become Seller", "Affiliate", "Advertise", "Partnership"],
+            },
+          ].map((section, index) => (
+            <div
+              key={index}
+              className={`mt-8 lg:mt-16 lg:ml-0 ${
+                index > 0 ? "lg:ml-8" : ""
+              }`}
+            >
+              <h1 className="font-inter font-semibold text-lg text-black">
+                {section.title}
+              </h1>
+              <ul className="flex flex-col mt-8 gap-2 text-[#666666] font-normal font-inter text-sm">
+                {section.links.map((link, idx) => (
+                  <Link href="/" key={idx}>
+                    {link}
+                  </Link>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </Container>
   );

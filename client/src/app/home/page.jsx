@@ -10,6 +10,7 @@ import TestimonialsSection from "./TestimonialsSection";
 import ContactUsSection from "./ContactUsSection";
 import PromoCard from "@/components/cards/PromoCard";
 import Footer from "@/components/footer/Footer";
+import BottomFooter from "@/components/footer/BottomFooter";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <ContactUsSection />
       <PromoCard />
       <Footer/>
+      <BottomFooter/>
     </div>
   );
 };

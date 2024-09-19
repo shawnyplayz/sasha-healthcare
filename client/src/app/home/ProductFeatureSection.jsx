@@ -28,7 +28,7 @@ const ProductFeatureSection = () => {
 
   const filteredProducts =
     activeTab === 0
-      ? products // Show all products for "All Products"
+      ? products
       : products.filter(
           (product) => product.category === tabs[activeTab].label
         );
@@ -50,7 +50,7 @@ const ProductFeatureSection = () => {
             sollicitudin
           </p>
         </div>
-        <div className="w-full flex justify-center mt-6">
+        <div className="w-full flex justify-center mt-6 max-w-[100px] lg:max-w-none">
           <TabNavigation tabs={tabs} onTabClick={handleTabChange} />{" "}
           {/* Pass onTabClick */}
         </div>
