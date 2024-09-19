@@ -21,7 +21,7 @@ const BottomFooter = () => {
         <div className="flex gap-3 md:gap-5 mb-4 md:mb-0 justify-center items-center">
           <div>
             <Image
-              src="/Images/footerAssets/icons/paypal.svg"
+              src="/Images/FooterAssets/icons/paypal.svg"
               width={25}
               height={25}
               alt="paypal logo"
@@ -29,7 +29,7 @@ const BottomFooter = () => {
           </div>
           <div>
             <Image
-              src="/Images/footerAssets/icons/stripe.svg"
+              src="/Images/FooterAssets/icons/stripe.svg"
               width={40}
               height={40}
               alt="Stripe logo"
@@ -37,7 +37,7 @@ const BottomFooter = () => {
           </div>
           <div>
             <Image
-              src="/Images/footerAssets/icons/mastercard.svg"
+              src="/Images/FooterAssets/icons/mastercard.svg"
               width={40}
               height={40}
               alt="Mastercard logo"
@@ -45,7 +45,7 @@ const BottomFooter = () => {
           </div>
           <div>
             <Image
-              src="/Images/footerAssets/icons/klarna.svg"
+              src="/Images/FooterAssets/icons/klarna.svg"
               width={40}
               height={40}
               alt="Klarna logo"
@@ -53,7 +53,7 @@ const BottomFooter = () => {
           </div>
           <div>
             <Image
-              src="/Images/footerAssets/icons/visa.svg"
+              src="/Images/FooterAssets/icons/visa.svg"
               width={40}
               height={40}
               alt="visa logo"
