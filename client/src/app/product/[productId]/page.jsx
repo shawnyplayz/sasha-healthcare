@@ -36,7 +36,7 @@ const Product = () => {
           />
         </div>
         <Container>
-          <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 mt-4">
+          <div className="flex flex-col xl:flex-row gap-6 md:gap-8 lg:gap-10 mt-4">
             {/* Image & Thumbnails */}
             <ImageGallery images={product.productImages} />
 

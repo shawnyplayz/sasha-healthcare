@@ -1,10 +1,25 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { MdOutlineShoppingBag } from "react-icons/md";
+import CartPopover from "../cart/CartPopover";
 
 const Navbar = () => {
+
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const openCart = () => {
+    setIsCartOpen(true);
+  };
+
+  const closeCart = () => {
+    setIsCartOpen(false);
+  };
+
+  
   return (
     <nav className="flex items-center lg:justify-between py-6 lg:px-14 px-3">
       {/* Left Menu */}
@@ -44,7 +59,8 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <MdOutlineShoppingBag size={24} />
+          <MdOutlineShoppingBag size={24} onClick={openCart} />
+          <CartPopover isOpen={isCartOpen} closePopover={closeCart} />
         </li>
         <li>
           <Link href="/register">
