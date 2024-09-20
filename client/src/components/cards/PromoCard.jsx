@@ -13,7 +13,7 @@ const PromoCard = ({
   fontSize = "text-3xl lg:text-4xl",
 }) => {
   return (
-    <div className={`bg-[${bgColor}]`}>
+    <div style={{ backgroundColor: bgColor }}>
       <Container>
         <div className="py-12 flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 lg:space-x-6">
           <div className={`text-center lg:text-left lg:mr-32 ${textColor}`}>
