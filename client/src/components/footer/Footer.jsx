@@ -62,7 +62,9 @@ const Footer = () => {
           {/* First Section */}
           <div className="first-section mt-8 lg:mt-16">
             <h1 className="font-bold text-3xl lg:text-5xl">Sasha</h1>
-            <h5 className="mt-3 font-inter font-normal text-xs">HOTLINE 24/7</h5>
+            <h5 className="mt-3 font-inter font-normal text-xs">
+              HOTLINE 24/7
+            </h5>
             <h4 className="text-[#4B3EC4] font-inter font-bold text-lg lg:text-xl mt-1">
               +91 8655100951
             </h4>
@@ -136,9 +138,7 @@ const Footer = () => {
           ].map((section, index) => (
             <div
               key={index}
-              className={`mt-8 lg:mt-16 lg:ml-0 ${
-                index > 0 ? "lg:ml-8" : ""
-              }`}
+              className={`mt-8 lg:mt-16 lg:ml-0 ${index > 0 ? "lg:ml-8" : ""}`}
             >
               <h1 className="font-inter font-semibold text-lg text-black">
                 {section.title}

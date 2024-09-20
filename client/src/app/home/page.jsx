@@ -24,9 +24,19 @@ const Home = () => {
       <ProductFeatureSection />
       <TestimonialsSection />
       <ContactUsSection />
-      <PromoCard />
-      <Footer/>
-      <BottomFooter/>
+      <PromoCard
+        bgColor="#ECF494"
+        title="Subscribe"
+        discount="10% OFF"
+        subtitle="for first order"
+        buttonText="SUBSCRIBE"
+        buttonColor="bg-black"
+        buttonHoverColor="hover:bg-gray-800"
+        textColor="text-black"
+        fontSize="text-2xl lg:text-3xl"
+      />
+      <Footer />
+      <BottomFooter />
     </div>
   );
 };
