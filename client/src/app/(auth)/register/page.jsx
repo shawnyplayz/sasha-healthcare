@@ -14,7 +14,7 @@ const Register = () => {
   return (
     <div className="flex h-screen overflow-hidden">
       {/* Left Side */}
-      <div className="hidden ipad-pro:hidden lg:block left-side flex-1 relative">
+      <div className="hidden lg:block left-side flex-1 relative">
         <Image
           src="/Images/LoginImage.svg"
           alt="Register"
