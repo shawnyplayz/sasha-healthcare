@@ -17,6 +17,9 @@ module.exports = {
         "home-carousel-color-2":
           "linear-gradient(180deg, rgba(226, 247, 255, 0.1) 0%, rgba(0, 162, 229, 0.1) 100%)",
       },
+      screens: {
+        "ipad-pro": { raw: "(min-width: 1024px) and (max-width: 1366px)" },
+      },
     },
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],

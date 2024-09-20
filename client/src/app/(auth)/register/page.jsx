@@ -14,7 +14,7 @@ const Register = () => {
   return (
     <div className="flex h-screen overflow-hidden">
       {/* Left Side */}
-      <div className="left-side flex-1 relative">
+      <div className="hidden ipad-pro:hidden lg:block left-side flex-1 relative">
         <Image
           src="/Images/LoginImage.svg"
           alt="Register"
@@ -75,7 +75,10 @@ const Register = () => {
                   Subscribe to newsletter
                 </p>
               </div>
-              <Link href="/forgot-password" className="text-blue-500 hover:underline text-xs">
+              <Link
+                href="/forgot-password"
+                className="text-blue-500 hover:underline text-xs"
+              >
                 Forgot Password?
               </Link>
             </div>
