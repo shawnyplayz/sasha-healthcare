@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 
-const Input = ({ id, label, type = "text", placeholder }) => {
+const Input = ({ id, label, type = "text", placeholder, className = "" }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -10,7 +10,7 @@ const Input = ({ id, label, type = "text", placeholder }) => {
   };
 
   return (
-    <div className="flex flex-col pt-1 relative">
+    <div className={`flex flex-col pt-1 relative ${className}`}>
       <label htmlFor={id} className="font-medium text-sm">
         {label}
       </label>
@@ -19,7 +19,7 @@ const Input = ({ id, label, type = "text", placeholder }) => {
           id={id}
           type={type === "password" && isPasswordVisible ? "text" : type}
           placeholder={placeholder}
-          className="rounded-md w-full bg-gray-100 p-3 pr-10 font-roboto font-normal text-sm"
+          className={`rounded-md w-full bg-gray-100 p-3 pr-10 font-roboto font-normal text-sm ${className}`}
         />
         {type === "password" && (
           <button

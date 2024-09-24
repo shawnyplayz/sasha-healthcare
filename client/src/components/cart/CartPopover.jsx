@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 import { FaRegTrashAlt } from "react-icons/fa";
 
@@ -71,7 +72,9 @@ const CartPopover = ({ isOpen, closePopover }) => {
         <div className="space-y-6">
           {cartItems.map((item) => (
             <div key={item.id} className="flex items-center space-x-4">
-              <img
+              <Image
+                width={50}
+                height={50}
                 src={item.image}
                 alt={item.name}
                 className="w-16 h-16 rounded"
