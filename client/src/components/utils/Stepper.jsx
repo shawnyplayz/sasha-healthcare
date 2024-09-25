@@ -2,12 +2,13 @@ import React from "react";
 
 const Stepper = ({ steps, currentStep, onStepClick }) => {
   return (
-    <div className="flex items-center">
+    <div className="flex flex-nowrap items-center justify-center lg:justify-start">
+      {" "}
       {steps.map((step, index) => (
         <React.Fragment key={index}>
           {/* Step */}
           <div
-            className="flex items-center cursor-pointer"
+            className="flex items-center cursor-pointer mb-2 md:mb-0"
             onClick={() => onStepClick(index + 1)}
           >
             <div
@@ -22,7 +23,7 @@ const Stepper = ({ steps, currentStep, onStepClick }) => {
               {index + 1}
             </div>
             <span
-              className={`ml-2 ${
+              className={`ml-2 text-xs sm:text-base ${
                 index + 1 === currentStep
                   ? "text-green-500"
                   : index + 1 < currentStep
@@ -36,7 +37,7 @@ const Stepper = ({ steps, currentStep, onStepClick }) => {
 
           {/* Divider Line */}
           {index !== steps.length - 1 && (
-            <div className="w-16 h-1 bg-gray-300 mx-4"></div>
+            <div className="h-1 bg-gray-300 mx-1 sm:w-8 sm:mx-4"></div>
           )}
         </React.Fragment>
       ))}
