@@ -34,7 +34,7 @@ const PromoCard = ({
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-grow p-4 rounded-l-full border border-gray-300 focus:outline-none"
+              className="p-4 rounded-l-full w-full border border-gray-300 focus:outline-none"
             />
             <button
               className={`p-4 ${buttonColor} text-white rounded-r-full ${buttonHoverColor} focus:outline-none`}
