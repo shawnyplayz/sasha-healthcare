@@ -22,7 +22,7 @@ const Home = () => {
       <DiscoverSection />
       <InfoSection />
       <ProductFeatureSection />
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       <ContactUsSection />
       <PromoCard
         bgColor="#ECF494"
