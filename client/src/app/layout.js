@@ -7,16 +7,14 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Sasha HealthCare",
-  description: "",
+  title: "Sasha Life HealthCare Admin Pannel",
+  description: "Content Management System for Sasha Life Healthcare",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
-        {children}
-      </body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
