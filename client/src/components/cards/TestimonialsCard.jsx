@@ -1,5 +1,5 @@
-import { Avatar } from "@mui/material";
 import Rating from "@mui/material/Rating";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 const TestimonialsCard = ({
   author,
@@ -9,18 +9,18 @@ const TestimonialsCard = ({
   backgroundColor,
 }) => (
   <div
-    className="rounded-2xl max-w-[350px] max-h-[250px] p-6 relative shadow-md m-5"
-    style={{ backgroundColor }}
+    className="rounded-2xl max-w-[350px] max-h-[250px] p-6 relative shadow-md"
+    style={{ backgroundColor, margin: "20px", position: "relative" }}
   >
     {/* Conditionally render avatar at the top */}
     {avatarPosition === "top" && (
-      <div className="rounded-full">
-        <Avatar
-          alt={author}
-          src="/Images/ContactUsAssets/background.svg"
-          sx={{ width: 90, height: 90 }}
-          className="absolute -top-12 right-8"
-        />
+      <div className="absolute -top-5 right-8">
+        <Avatar>
+          <AvatarImage
+            src="/Images/ContactUsAssets/background.png"
+            alt="Default"
+          />
+        </Avatar>
       </div>
     )}
 
@@ -49,13 +49,13 @@ const TestimonialsCard = ({
 
     {/* Conditionally render avatar at the bottom */}
     {avatarPosition === "bottom" && (
-      <div className="rounded-full">
-        <Avatar
-          alt={author}
-          src="/Images/ContactUsAssets/background.svg"
-          sx={{ width: 90, height: 90 }}
-          className="absolute -bottom-12 right-8"
-        />
+      <div className="absolute -bottom-5 right-8">
+        <Avatar>
+          <AvatarImage
+            src="/Images/ContactUsAssets/background.png"
+            alt="Default"
+          />
+        </Avatar>
       </div>
     )}
   </div>
