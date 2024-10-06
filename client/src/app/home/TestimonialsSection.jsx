@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="mt-12 mb-32 flex flex-wrap justify-center lg:gap-10 gap-20">
+        <div className="mt-12 mb-32 flex flex-wrap justify-center lg:gap-10 gap-20 relative">
           {testimonialsCardData.map((testimonial) => (
             <TestimonialsCard
               key={testimonial.id}
