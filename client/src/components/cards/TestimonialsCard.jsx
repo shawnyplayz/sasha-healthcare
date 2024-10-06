@@ -9,8 +9,8 @@ const TestimonialsCard = ({
   backgroundColor,
 }) => (
   <div
-    className="rounded-2xl max-w-[350px] max-h-[250px] p-6 relative shadow-md"
-    style={{ backgroundColor, margin: "20px", position: "relative" }}
+    className="rounded-2xl max-w-[350px] max-h-[250px] p-6 relative shadow-md m-5"
+    style={{ backgroundColor }}
   >
     {/* Conditionally render avatar at the top */}
     {avatarPosition === "top" && (
