@@ -444,3 +444,51 @@ export const tabData = [
     ),
   },
 ];
+
+export const testimonialsCardData = [
+  {
+    id: 1,
+    author: "Anna Smith",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi id enim pulvinar suscipit. Praesent pretium orci non velit bibendum.",
+    userRating: 3,
+    avatarPosition: "top",
+    backgroundColor: "#F6F7D4",
+  },
+  {
+    id: 2,
+    author: "Sara Jacob",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi id enim pulvinar suscipit. Praesent pretium orci non velit bibendum.",
+    userRating: 4.5,
+    avatarPosition: "bottom",
+    backgroundColor: "#EDEDF5",
+  },
+  {
+    id: 3,
+    author: "Lara Zoe",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi id enim pulvinar suscipit. Praesent pretium orci non velit bibendum.",
+    userRating: 4,
+    avatarPosition: "top",
+    backgroundColor: "#FCF5EA",
+  },
+  {
+    id: 4,
+    author: "Franklin Jackson",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi id enim pulvinar suscipit. Praesent pretium orci non velit bibendum.",
+    userRating: 3.5,
+    avatarPosition: "bottom",
+    backgroundColor: "#FCF5EA",
+  },
+  {
+    id: 5,
+    author: "Jane Klien",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi id enim pulvinar suscipit. Praesent pretium orci non velit bibendum.",
+    userRating: 3,
+    avatarPosition: "top",
+    backgroundColor: "#F6F7D4",
+  },
+];
