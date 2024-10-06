@@ -67,13 +67,15 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="flex-shrink-0 flex items-center justify-center lg:justify-start">
+          <Link href="/">
           <Image
             src="/Images/SashaLogo.svg"
             width={140}
             height={50}
             alt="Sasha Logo"
-            className="mx-4" // Adjusts the spacing between logo and menu icon
+            className="mx-4"
           />
+          </Link>
         </div>
 
         {/* Cart Icon (Mobile Only) */}
