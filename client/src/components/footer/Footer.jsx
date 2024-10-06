@@ -70,11 +70,12 @@ const Footer = () => {
             </h4>
             <div className="mt-5 max-w-full lg:max-w-72">
               <p className="font-inter font-normal text-sm">
-                257 Thatcher Road St, Brooklyn, Manhattan, NY 10092
+                501, Krishna Kunj, Mhatre Wadi, L.T. Road, Dahisar West, Mumbai
+                - 400068, INDIA.
               </p>
             </div>
             <p className="font-inter font-normal text-sm mt-1">
-              contact@swateletro.com
+              sashalifehealthcare@gmail.com
             </p>
             <div className="icon-group mt-10 flex gap-3">
               <div className="rounded-full border p-3">
@@ -145,7 +146,7 @@ const Footer = () => {
               </h1>
               <ul className="flex flex-col mt-8 gap-2 text-[#666666] font-normal font-inter text-sm">
                 {section.links.map((link, idx) => (
-                  <Link href="/" key={idx}>
+                  <Link href="/" key={idx} className="hover:underline">
                     {link}
                   </Link>
                 ))}
